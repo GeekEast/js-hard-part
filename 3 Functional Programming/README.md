@@ -24,8 +24,9 @@
 > Determine `module` inside a `module` outside the `definition` stage where module maybe `attribute`,`behaviour` or `Entity`.
 
 ### High-Order Function
-- Take a `function` as argument and return another `function`
+- Take a `function` as argument or return another `function`
   - placehold the `functionality`
+- Just act like a `container` function
 
 ### Coincidence
 - ABC:
