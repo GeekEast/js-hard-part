@@ -25,4 +25,4 @@
 
 ### High-Order Function
 - Take a `function` as argument and return another `function`
-  - Here we just reuse the functionality within another function
+  - placehold the `functionality`
