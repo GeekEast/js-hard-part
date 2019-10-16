@@ -26,3 +26,12 @@
 ### High-Order Function
 - Take a `function` as argument and return another `function`
   - placehold the `functionality`
+
+### Coincidence
+- ABC:
+  - Attribute
+  - Behaviour
+  - Class
+- TV:
+  - Type
+  - Value
