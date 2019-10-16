@@ -21,7 +21,7 @@
 - Generics are declared when you **initialize** the class `rather than when you define the class`.
 
 ### Try to define Code-Reuse
-> Determine `submodule` of a `module` outside the `definition` stage.
+> Determine `module` inside a `module` outside the `definition` stage where module maybe `attribute`,`behaviour` or `Entity`.
 
 ### High-Order Function
 - Take a `function` as argument and return another `function`
