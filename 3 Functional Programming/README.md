@@ -33,5 +33,9 @@
   - Behaviour
   - Class
 - TV:
-  - Type
-  - Value
+  - Type (Ckass)
+  - Value (Attribute)
+  - Time: (Function)
+
+# Core
+- `Dynamic` is about `time`.

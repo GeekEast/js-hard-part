@@ -1,4 +1,4 @@
-### Syllabus
+## Syllabus
 - Variable
 - Function
 - Prototype
@@ -9,6 +9,8 @@
 - Sort Algorithm
 - CSS
 
+
+## Concept
 ### Ways of Learning IT
 - Easy Learning: `Learn by listening`
   - Platform: Code Academy, Udemy
@@ -31,7 +33,29 @@
 - Solve real-world problem using code
 - Communicate with others including coders.
 
-### References
+### DRY &&
+- Don't repeat yourself
+- Keep it simple, stupid
+
+### Function as first class Obejcts
+- assigned to `variables` and properties of other objects(`methods`)
+- passed as `arguments` into functions
+- `return` as `values` from functions
+
+## Practice
+### const and let
+- we should use `const` all the time.
+- unless we know we will do sth with `let`
+### Parameterizing Functions
+- attribute as parameter (add by `2`)
+- function as parameter (`add` by 2) which is also called `callback`
+
+### Benefits of Functional Programming
+- Reuse of function
+- Run code `asynchronously` (It's about `future`)
+
+
+## References
 -  [Callbacks and Higher-Order Functions](http://csbin.io/callbacks)
 - [Closures, Scope, and ExecutionContext](http://csbin.io/closures)
 - [Async](http://csbin.io/async)
