@@ -30,6 +30,34 @@ incrementCount();
 - data searching direction is downwards
   - local > `[[scope]]` > global
 
+### Duplicate or not?
+- It won't pollute the global environment
+- A good way to modulize things in Javascript
+```javascript
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    console.log(++counter);
+  }
+  return incrementCounter;
+}
+
+
+const incrementCount = outer();
+incrementCount();  
+incrementCount();
+
+
+const anotherFunction = outer();
+anotherFunction();
+anotherFunction();
+incrementCount();
+
+// what is the ouput?
+```
+### The power of Closure
+- `Memorize`: cache the function
+- `Modulize`: things withouth pollute the global environment
 ### Summary
 > Closure is a returned function with its surrounding environment where related variables are stored.
 ## Reference
