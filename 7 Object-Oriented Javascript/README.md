@@ -37,9 +37,69 @@ user3.increment();
 console.log(user3);
 ```
 ### How to Increase Code Reuse?
-- 
+- **Node**: Add `Wrapper` (From `Encapsulation` to `Inheritance`) 
+- **Link**: Add `Protocol` for Communication through **parameters** (From Interface to Polymorphism) 
 
 
+### Touch on Node-Reuse
+```javascript
+function userGenerator(name, score){
+  let newUser = {};
+  newUser.name = name;
+  newUser.score = score;
+  newUser.increment = function(){
+    newUser.score++;
+  }
+  return newUser;
+}
+
+const user1 = userGenerator("James", 3);
+user1.increment();
+console.log(user1);
+```
+- But function is not reused!
+### Again, Touch on Node-Reuse
+- `Encapsulate` functions part
+- Separate the functions part and store in a shared place: `prototype`
+- `reference` the function part
+```javascript
+function userGenerator(name, score){
+  // the userFunctionStore is defined in the prototype
+  let newUser = Object.create(userFunctionStore)
+  newUser.name = name;
+  newUser.score = score;
+  return newUser;
+}
+
+let userFunctionStore={
+  increment: function(){this.score++},
+  login: function(){console.log("You're loggedin")}
+}
+
+const user1 = userGenerator("James", 3);
+user1.increment();
+console.log(user1);
+```
+
+### Small Summary for Node Use
+- Little Dip
+  - `Encapsulate` as a small node.
+  - Put it in a `shared` place.
+  - `Reference` it when you need to use it.
+- Abstract
+  - `Wrap it up`
+  - Many things' `shared place` **pay attention to scope**
+  - `Reference`
+    - But when you `reference` sth
+      - You can generalize `type`: **Generics**
+      - You can change `value`
+
+
+### There is a suger
+
+```javascript
+
+```
 ```javascript
 class User {
   constructor(name, score){
