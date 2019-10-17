@@ -95,11 +95,25 @@ console.log(user1);
       - You can change `value`
 
 
-### There is a suger
-
+### There is a sugar
+- declare **function** through `prototype`
 ```javascript
+function User(name, score) {
+  this.name=name;
+  this.score=score;
+}
 
+User.prototype;
+User.prototype.increment = function(){
+  this.score++;
+}
+
+let user1 = new User("Bob",100)
+user1.increment();
+console.log(user1);
 ```
+
+### ES2015 Sugar
 ```javascript
 class User {
   constructor(name, score){
