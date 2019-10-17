@@ -78,6 +78,10 @@ console.log("2printout");
   - callback `Stack` runs `non-webAPI` code first
   - webAPI code's callback, for example `printHello()` and `printWorld()`, will be put into the Callstack `Queue` with filled parameters(data) to wait and then be transported to `Stack` **until the stack is empty**.`Not closuree`
 
+### Event Loop
+- A process to check the stack is empty or not
+- Just like a Polling process.
+
 
 ### External Data
 - Javascript speaks to `external data` through Web `Browser API`, which is the `XMLHttpRequest`
